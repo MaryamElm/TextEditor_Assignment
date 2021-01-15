@@ -115,7 +115,31 @@ public void set(int index,String elem){
   }
   array[index]=elem;
 }
+public static void main(String[] args){
+		NewStructure  newList = new NewStructure();
 
+		newList.add("b");
+		newList.add("d");
+		newList.add("a");
+		newList.add("c");
+
+		newList.add("z");
+
+    System.out.println(newList.get(0));
+    System.out.println(newList.get(1));
+    System.out.println(newList.get(2));
+    System.out.println(newList.get(3));
+
+
+		System.out.println(newList.get(4));
+		System.out.println(newList.remove(3));
+    System.out.println(newList.get(3));
+		System.out.println(newList.contains("q"));
+    System.out.println(newList.contains("z"));
+    System.out.println(newList.contains("d"));
+    System.out.println(newList.size());
+    System.out.println(newList.isEmpty());
+		}
 
 
 }
