@@ -1,6 +1,6 @@
 package textEditor.core;
 
-import textEditor.core.structures.NodeList;
+import textEditor.core.structures.NewStructure;
 
 
 /**
@@ -8,13 +8,13 @@ import textEditor.core.structures.NodeList;
  * adding and searching for words in the EWL
  */
 public class EwlListAdaptor extends EwlStructureAdaptor{
-	
+
 	// Our structure of choice. Not exactly the ideal solution :(
-	private NodeList<String> list = new NodeList<String>();
-	
+	private NewStructure list = new NewStructure();
+
 	@Override
 	protected void addWord(String word) {
-		list.addLast(word);
+		list.add(word);
 	}
 
 	@Override
@@ -32,6 +32,6 @@ public class EwlListAdaptor extends EwlStructureAdaptor{
 	public boolean isEmpty() {
 		return list.isEmpty();
 	}
-	
+
 
 }
