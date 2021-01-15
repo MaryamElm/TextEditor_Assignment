@@ -6,7 +6,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.StackImplementation;
+import textEditor.core.structures.StackImplementation;//Make it reference the new Stack Class
+
 
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
